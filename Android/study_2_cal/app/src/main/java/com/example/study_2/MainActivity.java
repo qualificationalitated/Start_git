@@ -54,26 +54,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         minusButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        int result = Integer.parseInt(num3.getText().toString())-Integer.parseInt(num4.getText().toString());
-                        textView.setText("결과는 : " + result);
-                    }
-                });
+            @Override
+            public void onClick(View view) {
+                int result = Integer.parseInt(num3.getText().toString())-Integer.parseInt(num4.getText().toString());
+                textView.setText("결과는 : " + result);
+            }
+        });
         gopButton.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                int result = Integer.parseInt(num5.getText().toString())*Integer.parseInt(num6.getText().toString());
-                                textView.setText("결과는 : " + result);
-                            }
-                        });
+            @Override
+            public void onClick(View view) {
+                int result = Integer.parseInt(num5.getText().toString())*Integer.parseInt(num6.getText().toString());
+                textView.setText("결과는 : " + result);
+            }
+        });
         divButton.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View view) {
-                                        int result = Integer.parseInt(num7.getText().toString())/Integer.parseInt(num8.getText().toString());
-                                        textView.setText("결과는 : " + result);
-                                    }
-                                });
+            @Override
+            public void onClick(View view) {
+                int result = Integer.parseInt(num7.getText().toString())/Integer.parseInt(num8.getText().toString());
+                textView.setText("결과는 : " + result);
+            }
+        });
 
     }
 
