@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WEB2 - CSS</title>
+    <style>
+        div {
+            border:5px solid black;
+        }
+        #grid {
+            border:5px solid pink;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div>Navigation</div>
+        <div>Article</div>
+    </div>
+</body>
+</html>
+
+<!--
+    디자인을 위한 태그 - 구분을 짓기 위한 태그
+    <div> 태그
+    기본적으로 block element이다.
+    <span> 태그
+    기본적으로 inline element이다.
+-->
+
+<!--
+    grid를 만들기 위해 부모 태그로 한번 감싸준다
+    부모태그에 display: grid; 속서을 부여한 뒤,
+    grid-template-columns: 150px(처음 항목은 150px) 1fr(두번째 항목은 그 이외의 남은 공간을);
+    라는 내용을 통해 수평으로 정렬한다.
+    < fr은 화면 전체의 어느정도를 쓸지 정해주는 단위..? 같은 것이다
+    (예 - 1fr 1fr 이면 1:1 비율 2fr 2fr 이면 2:1 비율)
+-->
