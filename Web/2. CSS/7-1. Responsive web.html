@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB2 - CSS</title>
+  <meta charset="utf-8">
+  <style>
+  div {
+      border:10px solid green;
+      font-size: 60px;
+  }
+  @media(max-width: 800px){ /* 스크린 폯이 800보다 작으면 - 최대가 800px 이면)*/
+    div{
+        display:none;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div>
+      Responsive
+  </div>
+</body>
+</html>
+
+<!--
+    수많은 화면에 대응되는 웹페이지를 만들기 위해, 화면의 크기에 따라 적합한 화면을 보여주는 반응형 웹디자인
+    미디어 쿼리
+    @media를 통해 조절 - 특정 조건을 만족할떄만 css 내용이 동작하도록 하는것이 가능함
+-->
