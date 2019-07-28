@@ -1,2 +1,9 @@
-# 낙서장
-> This is the place which im studing
+# Start_Git
+
+## Here is the place where I'm studing
+
+> ### Lists
+>
+> 1. Web
+> 2. Android studio
+
