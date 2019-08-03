@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB2 - Javascript</title>
+</head>
+<body>
+    <input type="button"  value="night" onclick="
+    var target = document.querySelector('body')
+    if(this.value === 'night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value = 'day'
+    }
+    else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value = 'night'
+    }
+    ">
+    <!--
+        document.querySelector('#night_day') -> this
+        document.querySelector('body') -> var target = document.querySelector('body')
+
+        자신을 지칭하는 부분을 this 로 대체,
+        body 태그를 선택하는 부분을 target 이라는 변수 내부에 넣어주면서
+        중복을 제거
+    -->
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum numquam, perferendis laboriosam reiciendis, deserunt amet in eos perspiciatis corporis ratione consectetur consequuntur, laborum officiis maxime quas eum illum quidem veritatis.
+    </p>
+</body>
+</html>
+
