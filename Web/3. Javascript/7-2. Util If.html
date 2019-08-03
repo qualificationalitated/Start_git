@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB2 - Javascript</title>
+</head>
+<body>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+    <!--querySelector 나 getElementsByID 나 비슷함-->
+    <input id="night_day" type="button"  value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('#night_day').value = 'day'
+    }
+    else{
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_day').value = 'night'
+    }
+    ">
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum numquam, perferendis laboriosam reiciendis, deserunt amet in eos perspiciatis corporis ratione consectetur consequuntur, laborum officiis maxime quas eum illum quidem veritatis.
+    </p>
+</body>
+</html>
