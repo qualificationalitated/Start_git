@@ -8,24 +8,24 @@
     <h1>Array</h1>
     <h2>Syntax</h2>
     <script>
-        var LOL_Team = ["SKT T1","Gen G","Damwon"];
+        var LOL_Team = ["SKT T1","Gen G","Damwon"]; // 배열, LOL_Team 이라는 변수에 "SKT T1","Gen G","Damwon" 을 넣기, 쉼표로 각 속성을 분류한다
     </script>
     
     <h2>get</h2>
-    <script>
-        var i=0;
+    <script>// 배열 내부의 데이터를 출력, 줄띄우기나 띄어쓰기는 어떻게 하는지..
+        var i=0; 
         for(i=0;i<LOL_Team.length;i++){
         document.write(LOL_Team[i]);
         }
     </script>
     
     <h2>add</h2>
-    <script>
+    <script>// 배열에 데이터를 추가하기. 뒤쪽에 넣을수도, 앞쪽에 넣을수도, 중간에 넣을수도, 뺼수도 있다. 검색을 통해 명령어를 찾아보자
         LOL_Team.push('Afreeca Freecs');
         LOL_Team.push('Sandbox Gaming');// 데이터를 가장 뒤에 넣기
     </script>
     <h2>count</h2>
-    <script>
+    <script> //배열 내부에 몇개의 데이터가 들어있는지 출력
         document.write(LOL_Team.length);
     </script>
 </body>
