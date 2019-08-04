@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB2 - Javascript</title>
+    <style>
+        h1{
+            text-align: center;
+            margin: 0px;
+            padding: 20px;
+            border-bottom: solid gray 1px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        ol{
+            margin: 0px;
+            padding: 30px;
+            border-right: solid gray 1px;
+        }
+        #contents{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id='grid'>
+        <ol>
+            <li><a href='test1.html'>HTML</a></li>
+            <li><a href='test2.html'>CSS</a></li>
+            <li><a href='test3.html'>Javascript</a></li>
+        </ol>
+        <div id='contents'>
+            <h2>Javascript</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, non perferendis dicta veritatis, nisi placeat dolorem quam, alias exercitationem neque tenetur rem sed iure commodi fugiat illo? Quidem, maiores iure.
+            </p>
+        </div>
+    </div>
+    <input type="button" value="night" onclick="
+    var target=document.querySelector('body');
+    if(this.value === 'night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value='day';
+        var i=0;
+        var a_list=document.querySelectorAll('a');
+        while(i<a_list.length)
+        {
+            a_list[i].style.color='powderblue';
+            i=i+1;
+        }
+    }
+    else{
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value='night';
+        var i=0;
+        var a_list=document.querySelectorAll('a');
+        while(i<a_list.length)
+        {
+            a_list[i].style.color='blue';
+            i=i+1;
+        }
+    }
+    ">
+</body>
+</html>
+<!--
+    queryselector는 가장 먼저 나오는 태그 하나만 불러온다
+    queryselectorAll 을 사용하면 배열 형식으로 태그들이 선택됨
+    var i=0;
+    var a_list=document.querySelectorAll('a'); //a_list에 a 태그를 배열의 형식으로 저장
+    while(i<a_list.length) a_list 배열의 데이터 갯수보다 적으면,
+    {
+        a_list[i].style.color='blue'; //a_list의 i 번째 태그의 글자 색을 blue 로 변경하라
+        i=i+1;
+    }
+-->
