@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Function</h1>
+    <h2>Basic</h2>        <!-- 함수 기본 -->
+    <ul>
+        <script>
+            function two()
+            {
+                document.write('<li>2-1</li>');
+                document.write('<li>2-2</li>');
+            }
+            document.write('<li>1</li>');
+            two();
+            document.write('<li>3</li>');
+            two();
+        </script>
+    </ul>
+    <h2>Parameter & Argument</h2> <!-- 매개변수와 인자 -->
+    <script>
+        function onePlueOne(x,y){
+            document.write(x+y+'<br>');
+        }
+        onePlueOne(3,4);
+        onePlueOne(4,9);
+        onePlueOne(10,2);
+        function onePlueOneRed(x,y)
+        {
+            document.write('<div style="color:red">',x+y,'</div>')
+        }
+        onePlueOneRed(2,3);
+    </script>
+    <h2>Return</h2> <!-- 매개변수와 인자 -->
+    <script>
+        function sum2(x,y){
+            return x+y;
+        }
+        document.write('<div>'+sum2(2,3)+'</div>');
+        document.write('<div style="color:red">'+sum2(2,3)+'</div>');
+        document.write('<div style="font-size:3rem">'+sum2(2,3)+'</div>');
+        </script>
+</body>
+</html>
