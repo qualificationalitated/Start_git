@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WEB2 - Javascript</title>
+</head>
+<body>
+    <!--객체란 이름이 있는 정리상자, 순서 없이 정보를 정리 할수 있는공간-->
+    <h1>Object</h1>
+    <h2>Grammer_Create</h2>
+    <script>
+        var coworkers={
+            "programmer" : "egoing",
+            "designer" : "leezhe"
+        }; // 배열과 다르게, 객체는 중괄호로 내용을 묶는다
+        document.write("Programmer : "+coworkers.programmer+"<br>");
+        document.write("Designer : "+coworkers.designer+"<br>");
+        coworkers.student = 'qualificationalitated';
+        coworkers['study tool'] = 'my Laptop';
+        document.write("Programmer : "+coworkers.student+"<br>");
+        document.write("Designer : "+coworkers['study tool']+"<br>");
+        /*
+        * 중괄호로 묶어서 객체를 선언.
+        * 정보를 넣을때, 정보에 대한 이름이 있어야 한다. 여기서는 egoing 이라는 정보를 넣을때 programmer이라는 이름/딱지를 붙여서 저장한거시다.
+        * .은 오브젝트 엑세스 오퍼레이터
+        * 정보를 꺼내올때는 document.write 처럼 coworkers.programmer(coworkers 객체의 programmer 이라는 이름의 정보)를 통해 불러옴
+        * 객체에 정보를 집어넣을때는 객체명.정보의 이름 = '정보';(coworkers.students = 'qualificationalitated';) 형식으로 넣으면 된다.
+        * 본디 이름에는 띄어쓰기를 넣을수는 없지만, 만일 넣고싶다면 coworkers['study tool'] 이렇게 대괄호를 넣고 따옴표로 묶어주면 된다.
+        */
+    </script>
+</body>
+</html>
