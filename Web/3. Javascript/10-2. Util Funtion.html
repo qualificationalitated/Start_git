@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB2 - Javascript</title>
+    <style>
+        h1{
+            text-align: center;
+            margin: 0px;
+            padding: 20px;
+            border-bottom: solid gray 1px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        ol{
+            margin: 0px;
+            padding: 30px;
+            border-right: solid gray 1px;
+        }
+        #contents{
+            padding-left: 10px;
+        }
+    </style>
+    <script>
+        function NightDayHandler(self) //여기서 this 를 설정하면 전역을 가르키게 된다. 약간 this 라는 전역 변수를 가리키게 되는걸까
+        {
+            var target=document.querySelector('body');
+            if(self.value === 'night')
+            {
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                self.value='day';
+                var i=0;
+                var a_list=document.querySelectorAll('a');
+                while(i<a_list.length)
+                {
+                    a_list[i].style.color='powderblue';
+                    i=i+1;
+                }
+            }
+            else
+            {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                self.value='night';
+                var i=0;
+                var a_list=document.querySelectorAll('a');
+                while(i<a_list.length)
+                {
+                    a_list[i].style.color='blue';
+                    i=i+1;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id='grid'>
+        <ol>
+            <li><a href='test1.html'>HTML</a></li>
+            <li><a href='test2.html'>CSS</a></li>
+            <li><a href='test3.html'>Javascript</a></li>
+        </ol>
+        <div id='contents'>
+            <h2>Javascript</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, non perferendis dicta veritatis, nisi placeat dolorem quam, alias exercitationem neque tenetur rem sed iure commodi fugiat illo? Quidem, maiores iure.
+            </p>
+        </div>
+    </div>
+    <input type="button" value="night" onclick="
+    NightDayHandler(this)
+    ">
+</body>
+</html>
