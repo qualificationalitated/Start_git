@@ -28,5 +28,14 @@
         * 본디 이름에는 띄어쓰기를 넣을수는 없지만, 만일 넣고싶다면 coworkers['study tool'] 이렇게 대괄호를 넣고 따옴표로 묶어주면 된다.
         */
     </script>
+    <h2>Iterate</h2> <!--객체를 통해 반복적으로 데이터를 불러오기-->
+    <script>
+        for(var key in coworkers) //for 을 통해 coworkers의 key 값들을 가져오는것 여기서 key 값이란 정보에 대한 이름(egoing 이라는 정보를 넣을때의 programmer)
+        {
+            //coworkers의 키 값 하나하나를 변수로 선언해준다 랍니다.
+            document.write(key+'<br>');
+            document.write(key+' : '+coworkers[key]+'<br>');
+        }
+    </script>
 </body>
 </html>
