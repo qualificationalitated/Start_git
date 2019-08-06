@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB2 - Javascript</title>
+    <style>
+        h1{
+            text-align: center;
+            margin: 0px;
+            padding: 20px;
+            border-bottom: solid gray 1px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        ol{
+            margin: 0px;
+            padding: 30px;
+            border-right: solid gray 1px;
+        }
+        #contents{
+            padding-left: 10px;
+        }
+    </style>
+    <script>
+        var _Body ={ // _Body 라는 객체 생성 || 음... 약간 객체는 주로 유사한 함수들을 담아 정리하기에 유용하다. 라는것을 알게되었따.
+            changeLinkColor: function(color){ //changeLinkColor 라는 키 값, 내부에는 링크의 색을 바꿔주는 함수
+                var i=0;
+                var a_list=document.querySelectorAll('a');
+                while(i<a_list.length)
+                {
+                    a_list[i].style.color=color;
+                    i=i+1;
+                }
+            }, //각 프로퍼티들을 구분할떄는 쉼표가 필요함을 잊지 말자
+            changeColor:function(color){ //changeColor 라는 키 값, 내부에는 글자색을 바꿔주는 함수
+                document.querySelector('body').style.color=color;
+            },
+            changebackgroundColor:function(color){ //changebackgroundColor 라는 키 값, 내부에는 배경색을 바꿔주는 함수
+                document.querySelector('body').style.backgroundColor=color;
+            },
+            setValue:function(value){ //setValue 라는 키 값, 내부에는 value 값을 바꿔주는 함수
+                document.querySelector('#changeMod').value=value;
+            }
+        }
+        function NightDayHandler(self)
+        {
+            var target=document.querySelector('body');
+            if(self.value === 'night')
+            {
+                _Body.changebackgroundColor('black'); // _Body 라는 객체의 각 내부 요소들을 선언하고 있다...? 암튼 사용하고 있다.
+                _Body.setValue('day');
+                _Body.changeColor('white');
+                _Body.changeLinkColor('powderblue');
+            }
+            else
+            {
+                _Body.changebackgroundColor('white');
+                _Body.setValue('night');
+                _Body.changeColor('black');
+                _Body.changeLinkColor('blue');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id='grid'>
+        <ol>
+            <li><a href='test1.html'>HTML</a></li>
+            <li><a href='test2.html'>CSS</a></li>
+            <li><a href='test3.html'>Javascript</a></li>
+        </ol>
+        <div id='contents'>
+            <h2>Javascript</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, non perferendis dicta veritatis, nisi placeat dolorem quam, alias exercitationem neque tenetur rem sed iure commodi fugiat illo? Quidem, maiores iure.
+            </p>
+        </div>
+    </div>
+    <input id="changeMod" type="button" value="night" onclick="
+    NightDayHandler(this)
+    ">
+</body>
+</html>
