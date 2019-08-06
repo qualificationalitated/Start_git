@@ -36,6 +36,26 @@
             document.write(key+'<br>');
             document.write(key+' : '+coworkers[key]+'<br>');
         }
+        /*
+        * for(var key in coworkers) - coworkers 의 키값들을 불러온다...? 약간 값들을 불러와서 key 라는 변수에 반복적으로 저장시켜주는 느낌
+        * document.write(key+'<br>'); - 불러온 key 값들을 출력
+        * document.write(key+' : '+coworkers[key]+'<br>'); - coworkers의 key 값에 대한 정보를 출력 ' 좀더 이해해봐야할 부분이 아닌가.. ' 아니 뭔가 이해는 했는데 2% 부족하달까...
+        */
+    </script>
+    <h2>Property & Method</h2>
+    <script> // coworkers 라는 객체에 메소드를 추가하기
+        coworkers.showAll = function(){
+            for(var key in this){
+            document.write(key+' : '+this[key]+'<br>');
+            }
+        }
+        coworkers.showAll();
+        /*
+        * 객체에 소속된 함수 - 메소드. 객체에 소속된 변수 - 프로퍼티
+        * coworkers 라는 객체의 showAll 이라는 key값? 폴더 이름? 에 함수를 넣음.
+        * coworkers -> this 해 줌으로써, 함수명이 바뀌어도 showAll이 잘 동작할수 있게끔 함
+        * 한가지 알아낸것 Function과 function은 다르다. Function 으로 해서 this 를 출력하니 좀 커다란 정보들이 나왔다
+        */
     </script>
 </body>
 </html>
