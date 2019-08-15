@@ -1,3 +1,0 @@
-C:/Users/USER/Documents/GitHub/Start_git/Algorithm/1003/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/USER/Documents/GitHub/Start_git/Algorithm/1003/cmake-build-debug/CMakeFiles/1003.dir
-C:/Users/USER/Documents/GitHub/Start_git/Algorithm/1003/cmake-build-debug/CMakeFiles/edit_cache.dir
