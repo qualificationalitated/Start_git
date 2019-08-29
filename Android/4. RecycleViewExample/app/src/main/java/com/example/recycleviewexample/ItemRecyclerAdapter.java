@@ -1,15 +1,15 @@
 package com.example.recycleviewexample;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextClock;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.recycleviewexample.model.Item;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.recycleviewexample;
+package com.example.recycleviewexample.model;
 
 public class DefaultResponse {
     private Result result;

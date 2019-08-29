@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.recycleviewexample.model.Item;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
