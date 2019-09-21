@@ -6,4 +6,6 @@
 >
 > 1. Web
 > 2. Android studio
+> 3. Algorimthm
+> 4. CTF
 
