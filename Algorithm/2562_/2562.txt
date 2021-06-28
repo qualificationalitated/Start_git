@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    int max=0,maxPlace;
+    for (int i = 1; i <= 9; i++)
+    {
+        scanf("%d",&a);
+        if(a>max){
+        max=a;
+        maxPlace=i;
+        }
+    }
+    printf("%d\n%d",max,maxPlace);
+    return 0;
+}
