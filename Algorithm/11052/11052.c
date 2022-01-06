@@ -1,23 +1,16 @@
 #include<stdio.h>
-int costs[1002];
+int max(int x,int y){
+    return x>y? x:y;
+}
 int main()
 {
-    int n,p[1002];
+    int n,p,dp[1002]={0,};
     scanf("%d",&n);
-    for (int i=1;i<=n;i++){
-        scanf("%d",&p[i]);
+    for (int i = 1; i <= n; i++){
+        scanf("%d",&p);
+        for (int j = i; j <= n; j++)
+            dp[j]=max(dp[j],p+dp[j-i]);
     }
-    costs[1]=p[1];
-    for (int i = 2; i <= n; i++)
-    {
-        costs[i]=p[i];
-        for (int j = i; j >= 1; j--)
-        {
-            int sum=p[j]+costs[i-j];
-            if(costs[i]<sum)
-                costs[i]=sum;
-        }
-    }
-    printf("%d",costs[n]);
+    printf("%d",dp[n]);
     return 0;
 }
