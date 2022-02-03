@@ -8,7 +8,7 @@ https://www.acmicpc.net/user/equalia
 
 ## 백준을 활용한 알고리즘 풀이
 
-1일 1문제를 목표로 [백준](https://www.acmicpc.net/) 알고리즘을 풀이합니다.
+1일 1문제를 목표로 [백준](https://www.acmicpc.net/) 알고리즘을 풀이합니다. <br>
 푼 문제의 코드와 풀이를 번호별로 분류하여 정리합니다.
 
 
@@ -56,6 +56,6 @@ https://www.acmicpc.net/user/equalia
 >2. 기타 개인 사정으로 인해 알고리즘 풀이가 불가능할 경우, 스터디 참가 인원의 과반수 (참가자가 N명일경우, N/2+1명)이 이를 불가피한 상황으로 인정할 경우 벌금이 부과되지 않는다.
 >
 
-위 규칙을 바탕으로 알고리즘 스터디를 진행합니다.
+위 규칙을 바탕으로 알고리즘 스터디를 진행합니다. <br>
 진행 인원 : [김현우](https://github.com/qualificationalitated/Start_git/tree/master/Algorithm), [이정현](https://github.com/5d-jh/acmicpc), [김상엽](https://github.com/yeop-sang/yeop-sang.github.io/tree/master/algorithm) (3명)
 
