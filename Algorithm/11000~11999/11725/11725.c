@@ -1,9 +1,9 @@
 #include<stdio.h>
-int list[100002][20],cnt[100002]={0,},visit[100002];
-int que[100002];
+#define LIM 100002
+int list[LIM][20],cnt[LIM]={0,},visit[LIM],que[LIM];
 int main()
 {
-	int n;
+	int n,head=0,tail=1;
 	scanf("%d",&n);
 	for (int i = 1; i < n; i++){
 		int a,b;
@@ -11,13 +11,11 @@ int main()
 		list[a][cnt[a]++]=b;
 		list[b][cnt[b]++]=a;
 	}
-	int head=0,tail=0;
-	que[tail++]=1;
+	que[0]=1;
 	visit[1]=1;
 	while(head<tail){
 		int now=que[head++];
-		for (int i = 0; i < cnt[now]; i++)
-		{
+		for (int i = 0; i < cnt[now]; i++){
 			int linked=list[now][i];
 			if(!visit[linked]){
 				visit[linked]=now;
