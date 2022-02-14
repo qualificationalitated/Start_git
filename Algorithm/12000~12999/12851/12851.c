@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define LIM 100000
-int que[LIM*2+1],cases[LIM*2+1]={0,},visit[LIM*2+1];
+int que[LIM+2],cases[LIM+2]={0,},visit[LIM+2];
 int head=0,tail=1;
 int possible(int x,int y){
     if(visit[x]>=visit[y]+1){
@@ -23,9 +23,9 @@ int main()
         now=que[head++];
         if(now>0)
             possible(now-1,now);
-        if(now<LIM*2)
+        if(now<LIM)
             possible(now+1,now);
-        if(now<=LIM)
+        if(now*2<=LIM)
             possible(now*2,now);
     }
     printf("%d %d",visit[end]-1,cases[end]);
