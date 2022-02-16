@@ -1,5 +1,6 @@
 #include<stdio.h>
-int map[1000002],route[1000002];
+#define LIM 1000002
+int map[LIM],route[LIM];
 int find(int n)
 {
     map[1]=0;
