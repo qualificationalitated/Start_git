@@ -9,9 +9,9 @@ int main(){
     for(int i=1;i<=n;i++){
         scanf("%d",&input);
         arrSum[i]=arrSum[i-1]+input;
-        if(i>=k && max<arrSum[i]-arrSum[i-k]){
+        
+        if(i>=k && max<arrSum[i]-arrSum[i-k])
             max=arrSum[i]-arrSum[i-k];
-        }
     }
     printf("%d",max);
     return 0;
