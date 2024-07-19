@@ -9,7 +9,7 @@ int main(){
 	ios::sync_with_stdio(false);
 	cin.tie(0); cout.tie(0);
 	int n,r,l,ans=0;
-	grid move[4]={{0,1},{1,0},{0,-1},{-1,0}};
+	int mover[4]={0,1,0,-1}, movec[4]={1,0,-1,0};
 	cin>>n>>r>>l;
 	vector<vector<int>> map(n);
 	for(int i=0;i<n;i++){
@@ -43,8 +43,8 @@ int main(){
 
 						// find next city
 						for(int i=0;i<4;i++){
-							next.r = now.r+move[i].r;
-							next.c = now.c+move[i].c;
+							next.r = now.r+mover[i];
+							next.c = now.c+movec[i];
 							if(next.r<0 || next.r>=n || next.c<0 || next.c>=n)	continue;
 							if(united[next.r][next.c])	continue;
 							diff = abs(map[next.r][next.c] - map[now.r][now.c]);
